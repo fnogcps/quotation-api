@@ -1,0 +1,17 @@
+{
+    "name": "sage/phpunit",
+    "autoload": {
+        "psr-4": {
+            "MiniaturePancake\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Felipe Nogueira",
+            "email": "contato.fnog@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
