@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MiniaturePancake\Quotation;
+namespace API\Quotation;
 
 use PHPUnit\Framework\TestCase;
 
@@ -15,7 +15,7 @@ class QuotationTest extends TestCase
     }
     public function assertPreConditions(): void
     {
-        $this->assertTrue(class_exists('MiniaturePancake\Quotation\QuotationAPI'));
+        $this->assertTrue(class_exists('API\Quotation\QuotationAPI'));
     }
     public function testGetDollarExchangeRate()
     {

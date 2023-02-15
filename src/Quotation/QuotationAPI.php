@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MiniaturePancake\Quotation;
+namespace API\Quotation;
 
 class QuotationAPI
 {

@@ -1,8 +1,8 @@
 {
-    "name": "sage/phpunit",
+    "name": "fnogcps/quotation-api",
     "autoload": {
         "psr-4": {
-            "MiniaturePancake\\": "src/"
+            "API\\": "src/"
         }
     },
     "authors": [
