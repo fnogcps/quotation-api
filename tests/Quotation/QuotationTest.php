@@ -8,9 +8,17 @@ use PHPUnit\Framework\TestCase;
 
 class QuotationTest extends TestCase
 {
+    private $api;
+    public function setUp(): void
+    {
+        $this->api = new QuotationAPI();
+    }
+    public function assertPreConditions(): void
+    {
+        $this->assertTrue(class_exists('MiniaturePancake\Quotation\QuotationAPI'));
+    }
     public function testGetDollarExchangeRate()
     {
-        $api = new QuotationAPI();
-        $this->assertIsFloat($api->getExchangeRate("BRL", "USD")['bid']);
+        $this->assertIsFloat($this->api->getExchangeRate("BRL", "USD")['bid']);
     }
 }
